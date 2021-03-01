@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>SAP</title>
+
+	<script src="bootstrap/shell.js" id="sap-ushell-bootstrap"></script>
+	<!-- TODO: Using online version of UI5. After using a build tool, we can use a local ui5 distribution -->
+	<script id="sap-ui-bootstrap" src="https://ui5.sap.com/resources/sap-ui-core.js"></script>
+
+	<script>
+		sap.ui.getCore().attachInit(function () {
+			sap.ushell.Container.createRenderer().placeAt("content");
+		});
+	</script>
+</head>
+
+<body class="sapUiBody" id="content"></body>
+
+</html>

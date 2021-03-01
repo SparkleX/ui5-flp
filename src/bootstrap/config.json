@@ -1,0 +1,73 @@
+{
+	"defaultRenderer": "fiori2",
+	"bootstrapPlugins": {
+		"RuntimeAuthoringPlugin" : {
+			"component": "sap.ushell.plugins.rta",
+			"config": {
+				"validateAppVersion": false
+			}
+		},
+		"PersonalizePlugin": {
+			"component": "sap.ushell.plugins.rta-personalize",
+			"config": {
+				"validateAppVersion": false
+			}
+		}
+	},	
+	"renderers": {
+		"fiori2": {
+			"componentData": {
+				"config": {
+					"enableActionModeMenuButton": true,
+					"enableMergeAppAndShellHeaders": false,
+					"search": "hidden"
+				}
+				
+			}
+		}
+	},
+	"services": {
+		"LaunchPage": {
+			"adapter": {
+				"config": {
+					"groups": [
+						{
+							"id": "group_1",
+							"title": "Home",
+							"tiles": [
+								{
+									"id": "tile07",
+									"title": "HelpView Tile",
+									"size": "1x1",
+									"tileType": "sap.ushell.ui.tile.StaticTile",
+									"properties": {
+										"chipId": "sap_ushell_generated_chip_id",
+										"title": "HelpView Tile",
+										"info": "HelpView Tile Sample",
+										"targetURL": "#HelpView-App",
+										"icon": "sap-icon://multi-select"
+									}
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		"NavTargetResolution": {
+			"adapter": {
+				"config": {
+					"applications": {
+						"HelpView-App": {
+							"additionalInformation": "SAPUI5.Component=demo.apps.HelpView",
+							"applicationType": "URL",
+							"url": "/apps/HelpView",
+							"description": "HelpView",
+							"title": "HelpView"
+						}
+					}
+				}
+			}
+		}
+	}
+}
