@@ -1,19 +1,6 @@
 {
 	"defaultRenderer": "fiori2",
-	"bootstrapPlugins": {
-		"RuntimeAuthoringPlugin": {
-			"component": "sap.ushell.plugins.rta",
-			"config": {
-				"validateAppVersion": false
-			}
-		},
-		"PersonalizePlugin": {
-			"component": "sap.ushell.plugins.rta-personalize",
-			"config": {
-				"validateAppVersion": false
-			}
-		}
-	},
+	"bootstrapPlugins": {},
 	"renderers": {
 		"fiori2": {
 			"componentData": {
@@ -101,9 +88,9 @@
 										"icon": "sap-icon://Fiori2/F0001",
 										"targetURL": "#Action-todefaultapp"
 									}
-								}								
+								}
 							]
-						}						
+						}
 					]
 				}
 			}
@@ -121,6 +108,13 @@
 						}
 					}
 				}
+			}
+		},
+		"Container": {
+			"module": "sap.ushell.services.Container",
+			"adapter": {
+				"module": "sap.ushell.adapters.local.ContainerAdapter",
+				"config": {}
 			}
 		}
 	}
