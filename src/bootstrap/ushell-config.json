@@ -1,0 +1,127 @@
+{
+	"defaultRenderer": "fiori2",
+	"bootstrapPlugins": {
+		"RuntimeAuthoringPlugin": {
+			"component": "sap.ushell.plugins.rta",
+			"config": {
+				"validateAppVersion": false
+			}
+		},
+		"PersonalizePlugin": {
+			"component": "sap.ushell.plugins.rta-personalize",
+			"config": {
+				"validateAppVersion": false
+			}
+		}
+	},
+	"renderers": {
+		"fiori2": {
+			"componentData": {
+				"config": {
+					"enableActionModeMenuButton": true,
+					"enableMergeAppAndShellHeaders": false,
+					"search": "hidden"
+				}
+			}
+		}
+	},
+	"services": {
+		"LaunchPage": {
+			"module": "sap.ushell.services.LaunchPage",
+			"adapter": {
+				"module": "demo.adapter.LaunchPageAdapter",
+				"config": {
+					"groups": [
+						{
+							"id": "group_1",
+							"title": "Home",
+							"tiles": [
+								{
+									"id": "tile07",
+									"title": "HelpView Tile",
+									"size": "1x1",
+									"tileType": "sap.ushell.ui.tile.StaticTile",
+									"properties": {
+										"chipId": "sap_ushell_generated_chip_id",
+										"title": "HelpView Tile",
+										"info": "HelpView Tile Sample",
+										"targetURL": "#HelpView-App",
+										"icon": "sap-icon://multi-select"
+									}
+								}
+							]
+						}
+					],
+					"catalogs": [
+						{
+							"id": "c1",
+							"title": "Administration",
+							"tiles": [
+								{
+									"id": "todefaultapp",
+									"title": "Default Application",
+									"size": "1x1",
+									"tileType": "sap.ushell.ui.tile.StaticTile",
+									"properties": {
+										"chipId": "catalogTile_00",
+										"title": "Default Application",
+										"info": "shows statically registered apps",
+										"icon": "sap-icon://Fiori2/F0001",
+										"targetURL": "#Action-todefaultapp"
+									}
+								}
+							]
+						},
+						{
+							"id": "c2",
+							"title": "Finiance",
+							"tiles": [
+								{
+									"id": "todefaultapp",
+									"title": "App1",
+									"size": "1x1",
+									"tileType": "sap.ushell.ui.tile.StaticTile",
+									"properties": {
+										"chipId": "catalogTile_00",
+										"title": "App1",
+										"info": "shows statically registered apps",
+										"icon": "sap-icon://Fiori2/F0001",
+										"targetURL": "#Action-todefaultapp"
+									}
+								},
+								{
+									"id": "todefaultapp",
+									"title": "App2",
+									"size": "1x1",
+									"tileType": "sap.ushell.ui.tile.StaticTile",
+									"properties": {
+										"chipId": "catalogTile_00",
+										"title": "App2",
+										"info": "shows statically registered apps",
+										"icon": "sap-icon://Fiori2/F0001",
+										"targetURL": "#Action-todefaultapp"
+									}
+								}								
+							]
+						}						
+					]
+				}
+			}
+		},
+		"NavTargetResolution": {
+			"adapter": {
+				"config": {
+					"applications": {
+						"HelpView-App": {
+							"additionalInformation": "SAPUI5.Component=demo.apps.HelpView",
+							"applicationType": "URL",
+							"url": "/apps/HelpView",
+							"description": "HelpView",
+							"title": "HelpView"
+						}
+					}
+				}
+			}
+		}
+	}
+}
