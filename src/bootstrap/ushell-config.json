@@ -116,6 +116,13 @@
 				"module": "sap.ushell.adapters.local.ContainerAdapter",
 				"config": {}
 			}
-		}
+		},
+		"AllMyApps": {
+			"config": {
+				"enabled": true,
+				"showHomePageApps": false,
+				"showCatalogApps": true
+			}
+		}		
 	}
 }
