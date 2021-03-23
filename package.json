@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/SparkleX/ui5-rta#readme",
   "dependencies": {
+    "co-busboy": "^1.4.1",
     "jsonfile": "^6.1.0",
     "koa": "^2.13.1",
     "koa-bodyparser": "^4.3.0",

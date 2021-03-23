@@ -8,6 +8,7 @@
 					"enableActionModeMenuButton": true,
 					"enableMergeAppAndShellHeaders": false,
 					"search": "hidden"
+				
 				}
 			}
 		}
@@ -16,28 +17,69 @@
 		"LaunchPage": {
 			"module": "sap.ushell.services.LaunchPage",
 			"adapter": {
-				"module": "demo.adapter.LaunchPageAdapter",
+				"module": "demo.ushell.adapters.local.LaunchPageAdapter",
 				"config": {
 					"groups": [
 						{
 							"id": "group_1",
 							"title": "Home",
+							"isDefaultGroup": true,
 							"tiles": [
 								{
 									"id": "tile07",
-									"title": "HelpView Tile",
+									"title": "HelpView Tile 1",
 									"size": "1x1",
 									"tileType": "sap.ushell.ui.tile.StaticTile",
 									"properties": {
 										"chipId": "sap_ushell_generated_chip_id",
-										"title": "HelpView Tile",
+										"title": "HelpView Tile 1",
 										"info": "HelpView Tile Sample",
 										"targetURL": "#HelpView-App",
 										"icon": "sap-icon://multi-select"
 									}
 								}
 							]
-						}
+						},
+						{
+							"id": "group_2",
+							"title": "Me @ SAP",
+							"isPreset": true,
+							"tiles": [
+								{
+									"id": "tile07",
+									"title": "HelpView Tile 2",
+									"size": "1x1",
+									"tileType": "sap.ushell.ui.tile.StaticTile",
+									"properties": {
+										"chipId": "sap_ushell_generated_chip_id",
+										"title": "HelpView Tile 2",
+										"info": "HelpView Tile Sample",
+										"targetURL": "#HelpView-App",
+										"icon": "sap-icon://multi-select"
+									}
+								}
+							]
+						},
+						{
+							"id": "group_3",
+							"title": "Group 3",
+							
+							"tiles": [
+								{
+									"id": "tile07",
+									"title": "HelpView Tile 3",
+									"size": "1x1",
+									"tileType": "sap.ushell.ui.tile.StaticTile",
+									"properties": {
+										"chipId": "sap_ushell_generated_chip_id",
+										"title": "HelpView Tile 3",
+										"info": "HelpView Tile Sample",
+										"targetURL": "#HelpView-App",
+										"icon": "sap-icon://multi-select"
+									}
+								}
+							]
+						}					
 					],
 					"catalogs": [
 						{
@@ -114,7 +156,9 @@
 			"module": "sap.ushell.services.Container",
 			"adapter": {
 				"module": "sap.ushell.adapters.local.ContainerAdapter",
-				"config": {}
+				"config": {
+					"image": "/images/avatar.png"
+				}
 			}
 		},
 		"AllMyApps": {

@@ -20,8 +20,13 @@ sap.ui.define(
 			this.getView().setModel(oModel);
 		};
 		theClass.prototype.onPress = function (evt) {
-			const oModel = this.getView().getModel();
-			console.info(oModel.getJSON());
+			//const oModel = this.getView().getModel();
+			//console.info(oModel.getJSON());
+			//var oUploader = new sap.m.upload.Uploader( {uploadUrl: "/test"} );
+			//var oItem = new sap.m.upload.UploadSetItem();
+			//oUploader.uploadItem(oItem);
+			var oUploader = this.getView().byId("fileUploader");
+			document.getElementById("application-HelpView-App-component---list--fileUploader-fu").click();
 		};
 		return theClass;
 	}

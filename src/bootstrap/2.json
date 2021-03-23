@@ -1,0 +1,129 @@
+{
+	"enableBackGroundShapes": true,
+	"searchAvailable": true,
+	"title": "",
+	"searchFiltering": true,
+	"showEndUserFeedback": true,
+	"searchTerm": "",
+	"isPhoneWidth": false,
+	"enableNotifications": false,
+	"enableNotificationsUI": false,
+	"notificationsCount": 0,
+	"currentViewPortState": "Center",
+	"options": [
+		{
+			"id": "sap_belize",
+			"name": "SAP Belize",
+			"isSelected": true
+		}
+	],
+	"userStatusUserEnabled": true,
+	"shellAppTitleData": {
+		"currentViewInPopover": "navigationMenu",
+		"enabled": false,
+		"showGroupsApps": false,
+		"showCatalogsApps": false,
+		"showExternalProvidersApps": false
+	},
+	"userPreferences": {
+		"dialogTitle": "Settings",
+		"isDetailedEntryMode": false,
+		"activeEntryPath": null,
+		"entries": [
+			{
+				"entryHelpID": "userAccountEntry",
+				"title": "User Account",
+				"editable": true,
+				"valueResult": null,
+				"contentResult": null,
+				"icon": "sap-icon://account"
+			},
+			{
+				"entryHelpID": "themes",
+				"title": "Appearance",
+				"valueResult": null,
+				"editable": true,
+				"contentResult": null,
+				"icon": "sap-icon://palette"
+			},
+			{
+				"title": "Home Page",
+				"entryHelpID": "flpSettingsEntry",
+				"icon": "sap-icon://home"
+			},
+			{
+				"entryHelpID": "language",
+				"title": "Language & Region",
+				"editable": true,
+				"valueResult": null,
+				"contentResult": null,
+				"icon": "sap-icon://globe"
+			},
+			{
+				"entryHelpID": "UserActivitiesEntry",
+				"title": "User Activities",
+				"editable": true,
+				"valueResult": null,
+				"contentResult": null,
+				"icon": "sap-icon://laptop"
+			},
+			{
+				"entryHelpID": "userProfiling",
+				"title": "User Profiling",
+				"valueResult": null,
+				"editable": false,
+				"contentResult": null,
+				"icon": "sap-icon://user-settings",
+				"defaultVisibility": false
+			}
+		],
+		"profiling": []
+	},
+	"userImage": {
+		"personPlaceHolder": "/images/avatar.png",
+		"account": "sap-icon://account"
+	},
+	"currentState": {
+		"stateName": "home",
+		"showCurtain": false,
+		"headerVisible": true,
+		"showCatalog": false,
+		"showPane": false,
+		"showRightFloatingContainer": false,
+		"headItems": [
+			"meAreaHeaderButton"
+		],
+		"showRecentActivity": true,
+		"headEndItems": [
+			"sf",
+			"NotificationsCountButton"
+		],
+		"search": "",
+		"paneContent": [],
+		"actions": [
+			"openCatalogBtn",
+			"userSettingsBtn",
+			"ActionModeBtn",
+			"ContactSupportBtn",
+			"EndUserFeedbackBtn"
+		],
+		"floatingActions": [],
+		"subHeader": [],
+		"toolAreaItems": [],
+		"RightFloatingContainerItems": [],
+		"toolAreaVisible": false,
+		"floatingContainerContent": [],
+		"application": {
+			"title": "Home",
+			"hierarchy": [],
+			"relatedApps": [],
+			"showNavMenuTitle": false
+		},
+		"showLogo": true
+	},
+	"personalization": true,
+	"contentDensity": true,
+	"enableHelp": false,
+	"ShellAppTitleState": 1,
+	"enableTrackingActivity": true
+}

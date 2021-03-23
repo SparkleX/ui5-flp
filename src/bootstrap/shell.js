@@ -28,7 +28,7 @@ function bootstrap(fnCallback) {
 window["sap-ui-config"] = {
 	"xx-bootTask": bootstrap,
 	"libs": "sap.ushell, sap.collaboration, sap.m, sap.ui.layout, sap.suite.ui.microchart, sap.suite.ui.commons, sap.ui.rta",
-	"theme": "sap_fiori_3",
+	"theme": "sap_belize_plus",
 	"compatVersion": "edge",
 	"preload": "async",
 	"frameOptions": "allow",
